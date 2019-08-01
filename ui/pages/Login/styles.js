@@ -42,8 +42,8 @@ export const StyledLogin = styled.div`
 `;
 
 export const LoginPromo = styled.div`
-  background: var(--cb-blue)
-    url('http://cleverbeagle-assets.s3.amazonaws.com/graphics/pup-login-promo-background.png');
+  background: var(--cb-clear)
+    url('https://images.pexels.com/photos/716398/pexels-photo-716398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   display: none;
 
   @media screen and (min-width: 768px) {

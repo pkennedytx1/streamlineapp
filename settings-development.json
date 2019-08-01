@@ -3,7 +3,7 @@
     "graphQL": {
       "httpUri": "http://localhost:3000/graphql"
     },
-    "productName": "Product Name",
+    "productName": "StreamLine",
     "copyrightStartYear": "2018",
     "twitterUsername": "product",
     "facebookUsername": "product",
@@ -25,7 +25,7 @@
         "loginStyle": "popup"
       },
       "github": {
-        "enabled": true,
+        "enabled": false,
         "clientId": "",
         "secret": "",
         "loginStyle": "popup"

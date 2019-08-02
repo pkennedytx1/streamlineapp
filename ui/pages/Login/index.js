@@ -6,7 +6,7 @@ import { Bert } from 'meteor/themeteorchef:bert';
 import Validation from '../../components/Validation';
 import OAuthLoginButtons from '../../components/OAuthLoginButtons';
 import AccountPageFooter from '../../components/AccountPageFooter';
-import { StyledLogin, LoginPromo } from './styles';
+import StyledSignup from '../Signup/styles';
 
 class Login extends React.Component {
   handleSubmit = (form) => {
@@ -21,17 +21,7 @@ class Login extends React.Component {
 
   render() {
     return (
-      <StyledLogin>
-        <LoginPromo>
-          <header>
-            <img
-              src="http://cleverbeagle-assets.s3.amazonaws.com/graphics/pup-document-graphic.png"
-              alt="Clever Beagle"
-            />
-            <h4>Introducing Documents</h4>
-            <p>Keep track of your ideas, privately and publicly.</p>
-          </header>
-        </LoginPromo>
+      <StyledSignup>
         <Row>
           <Col xs={12}>
             <h4 className="page-header">Log In</h4>
@@ -108,7 +98,7 @@ class Login extends React.Component {
             </Validation>
           </Col>
         </Row>
-      </StyledLogin>
+      </StyledSignup>
     );
   }
 }

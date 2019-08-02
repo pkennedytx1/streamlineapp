@@ -4,11 +4,9 @@ import { lighten, darken } from 'polished';
 const textColor = '#4285F4';
 
 const Index = styled.div`
-  padding: 20px;
-  background: var(--cb-blue);
   text-align: center;
-  border-radius: 3px;
-  color: #fff;
+  color: black;
+  height: 100vh;
 
   img {
     width: 100px;

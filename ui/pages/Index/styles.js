@@ -6,7 +6,7 @@ const textColor = '#4285F4';
 const Index = styled.div`
   text-align: center;
   color: black;
-  height: 100vh;
+  height: auto;
 
   img {
     width: 100px;
@@ -14,11 +14,11 @@ const Index = styled.div`
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 78px;
   }
 
   p {
-    font-size: 18px;
+    font-size: 29px;
     color: ${lighten(0.25, textColor)};
   }
 
@@ -31,7 +31,9 @@ const Index = styled.div`
     }
 
     .btn {
-      border: none;
+      margin: 20px;
+      border-color: ${lighten(0.25, textColor)};
+      font-weight: bold;
     }
   }
 

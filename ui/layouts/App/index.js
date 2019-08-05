@@ -13,6 +13,8 @@ import Public from '../../components/Public';
 
 import Index from '../../pages/Index';
 
+import Dashboard from '../../pages/Dashboard';
+
 import Documents from '../../pages/Documents';
 import ViewDocument from '../../pages/ViewDocument';
 import EditDocument from '../../pages/EditDocument';
@@ -90,6 +92,15 @@ class App extends React.Component {
               exact
               path="/documents/:_id/edit"
               component={EditDocument}
+              setAfterLoginPath={setAfterLoginPath}
+              {...props}
+              {...state}
+            />
+
+            <Authenticated
+              exact
+              path="/dashboard"
+              component={Dashboard}
               setAfterLoginPath={setAfterLoginPath}
               {...props}
               {...state}

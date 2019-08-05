@@ -26,6 +26,7 @@ const routes = [
     query: {},
     projection: { fields: { _id: 1, createdAt: 1 }, sort: { createdAt: -1 } },
   },
+  { base: 'dashboard' },
 ];
 
 const sitemap = {

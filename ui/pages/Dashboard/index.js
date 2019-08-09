@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectsTimerCard from '../../components/ProjectsTimerCard';
+import PreviousDayData from '../../components/PreviousDayData';
 
 const Dashboard = () => (
   <div>
@@ -9,7 +10,7 @@ const Dashboard = () => (
           <ProjectsTimerCard />
         </div>
         <div className="col-md-4">
-          <h1>I am going to be the data from yesterday and the past 2 days</h1>
+          <PreviousDayData />
         </div>
       </div>
     </div>

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Calendly//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20190808T135656Z
+UID:calendly-73372075
+DTSTART:20190822T180000Z
+DTEND:20190822T183000Z
+CLASS:PRIVATE
+DESCRIPTION:Event Name: 30 Minute Meeting\nDate & Time: 01:00pm - 01:30pm (
+ Central Time - US & Canada) on Thursday\, August 22\, 2019\n\nDo you prefe
+ r a phone call or Zoom session?: Phone call\n\nNeed to make changes to thi
+ s event?\nCancel: https://calendly.com/cancellations/GDNBJK2ZTIEIRXW7\nRes
+ chedule: https://calendly.com/reschedulings/GDNBJK2ZTIEIRXW7\n
+SUMMARY:30 Minute Meeting with Tracey Wilson
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

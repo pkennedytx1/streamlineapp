@@ -1,9 +1,18 @@
 import React from 'react';
+// eslint-disable-next-line import/named
 import { ProjectTimerCardStyle } from './styles';
 
 const ProjectTimerCard = () => (
   <ProjectTimerCardStyle>
-    <h3>This is to show that the card is all good.</h3>
+    <h3>Current Project</h3>
+    <div className="row">
+      <div className="col-md-6">
+        <p>Timer function goes here</p>
+      </div>
+      <div className="col-md-6">
+        <p>Current Projects go here</p>
+      </div>
+    </div>
   </ProjectTimerCardStyle>
 );
 

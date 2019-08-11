@@ -1,7 +1,8 @@
 import React from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
 import { PreviousDayDataStyle } from './styles';
-import PreviousDayChartOne from '../PreviousDayDataCharts';
+import PreviousDayChartOne from '../PreviousDayDataChartOne';
+import PreviousDatChartTwo from '../PreviousDayDataChartTwo';
 
 const PreviousDayData = () => (
   <PreviousDayDataStyle>
@@ -11,10 +12,10 @@ const PreviousDayData = () => (
         <PreviousDayChartOne />
       </Tab>
       <Tab eventKey={2} title="-2">
-        Tab 2 content
+        <PreviousDatChartTwo />
       </Tab>
       <Tab eventKey={3} title="-3">
-        Tab 3 content
+        <h3>Hello</h3>
       </Tab>
     </Tabs>
   </PreviousDayDataStyle>

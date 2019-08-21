@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//THEKNOT
+BEGIN:VEVENT
+UID:20190820T232917Z-20191116T120000-Wedding@guest-messaging
+DTSTART:20191116T120000
+DTEND:20191116T130000
+DTSTAMP:20190820T232917Z
+SUMMARY:Andrea & Peter's Wedding
+DESCRIPTION:Attire: Cocktail\nNotes: The ceremony will begin promptly at 12:00pm at the San Fernando Cathedral followed by the reception at 4:30pm  at the Holy Trinity Banquet Hall. Addresses can be found below. 
+
+The doors for the reception open at 4:30pm, the cocktail bar will open at 5:00pm, and dinner will be served at 6:00pm. We look forward to celebrating with you! 
+
+San Fernando Cathedral: 115 Main Plaza, San Antonio, TX 78205
+
+Holy Trinity Banquet Hall: 20523 Huebner Road,  San Antonio, TX 78258
+LOCATION: - 
+END:VEVENT
+END:VCALENDAR

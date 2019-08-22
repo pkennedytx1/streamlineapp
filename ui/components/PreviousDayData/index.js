@@ -3,6 +3,7 @@ import { Tabs, Tab } from 'react-bootstrap';
 import { PreviousDayDataStyle } from './styles';
 import PreviousDayChartOne from '../PreviousDayDataChartOne';
 import PreviousDatChartTwo from '../PreviousDayDataChartTwo';
+import PreviousDatChartThree from '../PreviousDayDataChartThree';
 
 const PreviousDayData = () => (
   <PreviousDayDataStyle>
@@ -15,7 +16,7 @@ const PreviousDayData = () => (
         <PreviousDatChartTwo />
       </Tab>
       <Tab eventKey={3} title="-3">
-        <h3>Hello</h3>
+        <PreviousDatChartThree />
       </Tab>
     </Tabs>
   </PreviousDayDataStyle>

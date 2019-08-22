@@ -8,7 +8,7 @@ const ProjectTimerCard = () => (
     <h3>Current Project</h3>
     <div className="row">
       <div className="col-md-6">
-        <h3>Hello, this is the stopwatch</h3>
+        <h3>Stopwatch</h3>
         <h3>
           <Timer />
         </h3>

@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import { Modal } from 'react-bootstrap';
+import { Modal, Button } from 'react-bootstrap';
 // eslint-disable-next-line import/named
 import { ProjectTimerCardStyle } from './styles';
 import Timer from '../Timer';
@@ -49,15 +49,16 @@ class ProjectTimerCard extends React.Component {
               </a>
 
               <Modal show={this.state.show} onHide={this.handleClose}>
-                <button className="btn-danger" type="button" onClick={this.handleClose}>
-                  Close
-                </button>
                 <Modal.Header>
                   <h3>New Project Form</h3>
                 </Modal.Header>
                 <Modal.Body>
                   <p>Here is where everything is going.</p>
                 </Modal.Body>
+                <Modal.Footer>
+                  <Button onClick={this.handleClose}>Close</Button>
+                  <Button bsStyle="primary">Save changes</Button>
+                </Modal.Footer>
               </Modal>
 
               <div>

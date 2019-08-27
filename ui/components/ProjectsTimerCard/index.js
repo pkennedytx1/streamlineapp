@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 // eslint-disable-next-line import/named
 import { ProjectTimerCardStyle } from './styles';
 import Timer from '../Timer';
@@ -15,9 +15,22 @@ class ProjectTimerCard extends React.Component {
     this.state = {
       projectTitle: 'Please Choose a Project',
       show: false,
+      value: '',
     };
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  getValidationState() {
+    const { length } = this.state.value;
+    if (length > 2) return 'success';
+    if (length > 0) return 'error';
+    return null;
+  }
+
+  handleChange(e) {
+    this.setState({ value: e.target.value });
   }
 
   handleClose() {
@@ -49,16 +62,30 @@ class ProjectTimerCard extends React.Component {
               </a>
 
               <Modal show={this.state.show} onHide={this.handleClose}>
-                <Modal.Header>
-                  <h3>New Project Form</h3>
-                </Modal.Header>
-                <Modal.Body>
-                  <p>Here is where everything is going.</p>
-                </Modal.Body>
-                <Modal.Footer>
-                  <Button onClick={this.handleClose}>Close</Button>
-                  <Button bsStyle="primary">Save changes</Button>
-                </Modal.Footer>
+                <form>
+                  <Modal.Header>
+                    <h3>New Project Form</h3>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <FormGroup
+                      controlId="formBasicText"
+                      validationState={this.getValidationState()}
+                    >
+                      <ControlLabel>Working example with validation</ControlLabel>
+                      <FormControl
+                        type="text"
+                        value={this.state.value}
+                        placeholder="Enter text"
+                        onChange={this.handleChange}
+                      />
+                      <FormControl.Feedback />
+                    </FormGroup>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button onClick={this.handleClose}>Close</Button>
+                    <Button bsStyle="primary">Save changes</Button>
+                  </Modal.Footer>
+                </form>
               </Modal>
 
               <div>

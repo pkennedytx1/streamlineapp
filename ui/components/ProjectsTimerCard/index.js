@@ -71,11 +71,11 @@ class ProjectTimerCard extends React.Component {
                       controlId="formBasicText"
                       validationState={this.getValidationState()}
                     >
-                      <ControlLabel>Working example with validation</ControlLabel>
+                      <ControlLabel>Project Name</ControlLabel>
                       <FormControl
                         type="text"
                         value={this.state.value}
-                        placeholder="Enter text"
+                        placeholder="Project Name"
                         onChange={this.handleChange}
                       />
                       <FormControl.Feedback />

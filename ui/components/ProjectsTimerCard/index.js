@@ -16,6 +16,7 @@ class ProjectTimerCard extends React.Component {
       projectTitle: 'Please Choose a Project',
       show: false,
       value: '',
+      value2: '',
     };
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
@@ -31,6 +32,7 @@ class ProjectTimerCard extends React.Component {
 
   handleChange(e) {
     this.setState({ value: e.target.value });
+    this.setState({ value2: e.target.value2 });
   }
 
   handleClose() {
@@ -75,6 +77,13 @@ class ProjectTimerCard extends React.Component {
                       <FormControl
                         type="text"
                         value={this.state.value}
+                        placeholder="Project Name"
+                        onChange={this.handleChange}
+                      />
+                      <ControlLabel>Project Name</ControlLabel>
+                      <FormControl
+                        type="text"
+                        value={this.state.value2}
                         placeholder="Project Name"
                         onChange={this.handleChange}
                       />
